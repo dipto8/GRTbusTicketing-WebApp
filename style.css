@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+body{
+    
+
+}
+#navbar{
+margin: 4rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    
+    text-align: center;
+
+}
+.naviteams{
+
+    list-style: none;
+    display: flex;
+    padding: 5px;
+   
+  
+}
+.list-iteam{
+    margin: 5 10px ;
+    padding: 0 10px;
+}
+
+.conatainer{
+    background-color: aliceblue;
+    width: 90%;
+    margin: 2rem;
+   
+}
+.banner{
+    background-image: url(./images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    min-height: 550px;
+
+
+    margin: 1.5rem 0;
+    
+    
+}
+.cupons{
+    display: flex;
+    color: aliceblue;
+    margin: 0 100px;
+
+}
+.cupon{
+    background-color:#FFBF0F ;
+    min-width: 40%;
+    padding: 2rem;
+    display: flex;
+}
+.cupon h1{
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+   
+}
+.cupon h3{
+    color: #030712;
+    font-weight: 500;
+    font-size: 1.5rem;
+    min-width: 40%;
+}

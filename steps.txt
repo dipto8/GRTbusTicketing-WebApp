@@ -1,0 +1,14 @@
+Select Your seat
+-----------------------
+steps:
+1. if seat is selected background-color will be change
+   a. show how many tickets are selected on the right side of that section
+   b. Decrese the total amount of seat available
+   c. will display the seat number
+   d. Calculate the price of ticket (total, grand total)
+ user can proced to next page if they select a seat and gave their phone number 
+ otherwise the 'select' button will be diable by default
+
+
+2. Aplay coupon coupon if the user buy 4 tickets else coupon field will remain disable
+3. user can select 1 seat one time max select 4 (different seat )
