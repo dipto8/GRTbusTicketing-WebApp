@@ -9,8 +9,18 @@
 .interFont {
     font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: ;
+
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
 }
+
+#hr{
+    border: 1px solid black;
+    border-radius: 5rem;
+}
+.centeredButton{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
