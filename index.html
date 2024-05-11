@@ -147,8 +147,8 @@
 
       <section class=" mx-auto container my-24  ">
      
-        
-        <div class=" text-center my-24">
+        <div class="">
+        <div class=" text-center my-24 grid grid-cols-2">
           <h2 class="text-3xl font-bold mb-4"> <span class="text-lime-700">GO</span> Bus service</h2>
           <p class="text-gray-500">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
         </div>
@@ -212,36 +212,183 @@
 <section class=" mx-auto container my-24 border-4 rounded-2xl ">
   <div class=" grid grid-cols-2"></div>
  <!--BUS Seat -->
-   <div class=" borsder-4 rounded-3xl ">
-    <h2 class="font-bold">Select Your Seat</h2>
-    <div class=" flex justify-between">
+ <div class=" grid grid-cols-1 md:grid-cols-2 gap-6 lg:p-8">
+ <div class="lg:p-9 ">
+  <div class=" space-y-4 ">
+    <h2 class="font-bold text-2xl">Select Your Seat</h2>
+    <div class=" flex justify-between ">
       <div class=" flex">
         <img src="./images/seat-gray.png" alt="">
       <span class="text-gray-300 text-sm"> Available</span>
       </div>
-      <div class=" flex">
+      <div class=" flex lg:mb-">
         <img src="./images/seat-green.png" alt="">
-      <span> Selected</span>
+      <span class="lg:mb-4"> Selected</span>
       </div>
     </div>
    </div>
-   <div class="flex justify-end">
+   <div class="flex justify-end lg:mr-10 lg:mt-10 ">
     <img src="./images/test-drive.png" alt="">
    </div>
-   
-
-
-
-
-   <div class="text-3xl"> <h4 class-></h4>Select Your Seat</div>
+   <div class=" grid grid-cols-2 gap-6  ">
+    <!---Left side of seat-->
+    <div class=" grid grid-cols-2 lg:p-8">
+    <div class=" flex flex-col mx-2 ">
+      <div class="  gap-3 my-1  uppercase  flex flex-col ">
+        <kbd id="q3" class="kbd ">q3</kbd>
+        <kbd id="w3" class="kbd">w3</kbd>
+        <kbd id="e3" class="kbd">e3</kbd>
+        <kbd id="r3" class="kbd">r3</kbd>
+        <kbd id="t3" class="kbd">t3</kbd>
+        <kbd id="y3" class="kbd">y3</kbd>
+        <kbd id="u3" class="kbd">u3</kbd>
+        <kbd id="i3" class="kbd">i3</kbd>
+        <kbd id="o3" class="kbd">o3</kbd>
+        <kbd id="p3" class="kbd">p3</kbd>
+      </div>
+    </div>
+    <div class=" flex flex-col">
+      <div class="  gap-3  my-1  uppercase  flex flex-col">
+        <kbd id="q4" class="kbd ">q4</kbd>
+        <kbd id="w4" class="kbd">w4</kbd>
+        <kbd id="e4" class="kbd">e4</kbd>
+        <kbd id="r4" class="kbd">r4</kbd>
+        <kbd id="t4" class="kbd">t4</kbd>
+        <kbd id="y4" class="kbd">y4</kbd>
+        <kbd id="u4" class="kbd">u4</kbd>
+        <kbd id="i4" class="kbd">i4</kbd>
+        <kbd id="o4" class="kbd">o4</kbd>
+        <kbd id="p4" class="kbd">p4</kbd>
+      </div>
+    </div>
   </div>
+     <!---Right side of seat-->
+     <div class=" grid grid-cols-2 lg:p-8">
+      <div class=" flex flex-col mx-2">
+        <div class="  gap-3   uppercase  flex flex-col">
+          <kbd id="A" class="kbd ">A1</kbd>
+          <kbd id="B1" class="kbd">B1</kbd>
+          <kbd id="C1" class="kbd">C1</kbd>
+          <kbd id="D1" class="kbd">D1</kbd>
+          <kbd id="E1" class="kbd">tE</kbd>
+          <kbd id="F1" class="kbd">F1</kbd>
+          <kbd id="G1" class="kbd">G1</kbd>
+          <kbd id="i1" class="kbd">i1</kbd>
+          <kbd id="o1" class="kbd">o1</kbd>
+          <kbd id="p1" class="kbd">p1</kbd>
+        </div>
+      </div>
+      <div class=" flex flex-col">
+        <div class="  gap-3   uppercase  flex flex-col ">
+          <kbd id="q1" class="kbd ">q1</kbd>
+          <kbd id="w1" class="kbd">w1</kbd>
+          <kbd id="e2" class="kbd">e2</kbd>
+          <kbd id="r1" class="kbd">r1</kbd>
+          <kbd id="t1" class="kbd">t1</kbd>
+          <kbd id="y1" class="kbd">y1</kbd>
+          <kbd id="u1" class="kbd">u1</kbd>
+          <kbd id="i2" class="kbd">i2</kbd>
+          <kbd id="o2" class="kbd">o2</kbd>
+          <kbd id="p2" class="kbd">p2</kbd>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+    
+  </div>
+  <!--BUS Seat -->
+  
+  <div class=" p-8">
+    <h3 class="text-2xl font-bold">Select Your Seat</h3>
+    <div class="overflow-x-auto">
+      <table class="table">
+        <!-- head -->
+        <thead>
+          <tr>
+            
+            <th>Seat</th>
+            <th>Class</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- row 1 -->
+          <tr>
+            <th>A1</th>
+            <td>Economoy</td>
+            <td>12</td>
+           
+          </tr>
+          <!-- row 2 -->
+          <tr>
+            <th>A2</th>
+            <td>Economoy</td>
+            <td>12</td>
+           
+          </tr>
+          <!-- row 3 -->
+          <tr>
+            <th class="text-xl">Total Price</th>
+            <td></td>
+            <td class="text-xl font-bold"> 24 <span class="text-lime-700">$</span></td>
+       
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <div class="userInput flex flex-col lg:mt-10 ">
+    <label class="font-bold" for="fname">Passenger Name:</label>
+    <input class="border-2 rounded-lg w-full py-1" type="text" id="name" name="name"><br>
+    <label class="font-bold" for="fname">Phone Number</label>
+    <input class="border-2 rounded-lg w-full py-1" type="text" id="name" name="name"><br>
+    <label class="font-bold" for="fname">Email:</label>
+    <input class="border-2 rounded-lg w-full py-1" type="email" id="name" name="name"><br>
+    <button class="btn bg-lime-400 btn-xs sm:btn-sm md:btn-md ">Next</button>
+    
+    <div class=" flex justify-around mt-4">
+      <a href="#" class="underline">Terms and conditions</a>
+      <a href="#" class="underline"> Cancellation Policy</a>
+    </div>
+  </div>
+  
+ </div>
+</div>
+  
 </section>
 
      
 
 
     </main>
-    <footer></footer>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <aside>
+       <img  class="" src="./images/bus-logo.png" alt="">
+       <h2 class="text-3xl font-bold mb-4"> <span class="text-lime-700">GO</span> Bus service</h2>
+       <br> <p>Providing reliable Bus service Ontario</p>
+      </aside> 
+      <nav>
+        <h6 class="footer-title">Services</h6> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Company</h6> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <h6 class="footer-title">Legal</h6> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
 
     <script src="./utilities.js"></script>
     <script src="./scripts.js"></script>
