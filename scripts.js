@@ -1,7 +1,8 @@
 let selectedSeats = [];
 
 function handleClick(event) {
-    // Get the ID of the clicked element
+
+   
     const id = event.target.id;
   if (selectedSeats.length >= 4) {
     return;
@@ -13,6 +14,7 @@ function handleClick(event) {
   } else {
     return;
   }
+
 
   // Total seat
   const totalSeatElement = document.getElementById("total-seat");
@@ -33,10 +35,30 @@ function handleClick(event) {
   const currentTotalPrice = parseInt(totalpriceElementText);
   const updatedPrice = currentTotalPrice + 12;
   totalpriceElement.innerText = updatedPrice;
+
+  const seatName = document.getElementById('selected')
+  const seatNameField = seatName.innerText
+
+  seatNameField.innerText = id;
+  
 }
+
+
+
 
 // Get all elements with class 'kbd'
 const kbdElements = document.querySelectorAll(".kbd");
 for (const kbdElement of kbdElements) {
   kbdElement.addEventListener("click", handleClick);
 }
+
+
+const btn =document.getElementById('btn')
+btn.addEventListener('click',function(){
+    hideElementByID('header')
+    hideElementByID('main')
+    hideElementByID('foter')
+    showElementByID('success')
+   
+
+})

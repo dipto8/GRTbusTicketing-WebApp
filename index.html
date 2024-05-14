@@ -13,7 +13,12 @@
 </head>
 
 <body class="ralewayFont">
-  <header>
+  <div id="success" class="hidden  my-2 mx-auto ">
+    <img src="./images/success.png" alt="">
+    <p class="text-3xl">Your booking is completed</p>
+  </div>
+  <header id="header">
+  
     <!---NavBar-->
     <nav class="container  mt-2 m-auto">
       <div class="navbar bg-base-100">
@@ -59,7 +64,7 @@
 
     <!---NavBar-->
   </header>
-  <main>
+  <main id="main">
     <!---Hero img-->
 
     <section class="mx-auto container my-24   ">
@@ -320,7 +325,7 @@
               <tbody>
                 <!-- row 1 -->
                 <tr>
-                  <th id="selected">A1</th>
+                  <th id="selected"> b1</th> 
                   <td>Economoy</td>
                   <td>12</td>
 
@@ -329,22 +334,26 @@
         
                 <!-- row 3 -->
                 <tr>
-                  <th class="text-xl">Total Price></span></th>
+                  <th class="text-xl">Total Price </th>
                   <td></td>
-                  <td class="text-xl font-bold"> <span class="text-lime-700" id="Total-price">0</span> $</td>
+                  <td class="text-xl font-bold"> <span class="text-lime-700 " id="Total-price">0</span> $</td>
 
                 </tr>
               </tbody>
+
             </table>
+            <input  class="border-2 rounded-lg w-1/2 py-1" type="text" id="discount" placeholder="Enter Coupon" >
+            <button id="coupon_btn" onclick="dis()"   class="btn bg-lime-800 btn-xs sm:btn-sm md:btn-md  ">apply</button>
+            <p class="font-bold text-lg"> grand Total : <span id="grandTotal">0</span></p>         
           </div>
           <div class="userInput flex flex-col lg:mt-10 ">
             <label class="font-bold" for="fname">Passenger Name:</label>
-            <input class="border-2 rounded-lg w-full py-1" type="text" id="name" name="name"><br>
+            <input  class="border-2 rounded-lg w-full py-1" type="text" id="name" name="name" oninput="validation()"><br>
             <label class="font-bold" for="fname">Phone Number</label>
-            <input class="border-2 rounded-lg w-full py-1" type="text" id="name" name="name"><br>
+            <input class="border-2 rounded-lg w-full py-1" type="number" id="number" oninput="validation()" ><br>
             <label class="font-bold" for="fname">Email:</label>
-            <input class="border-2 rounded-lg w-full py-1" type="email" id="name" name="name"><br>
-            <button disabled class="  btn bg-lime-400 btn-xs sm:btn-sm md:btn-md  ">Next</button>
+            <input class="border-2 rounded-lg w-full py-1" type="email" id="email" oninput="validation()" ><br>
+            <button id="btn" disabled   class="  btn bg-lime-400 btn-xs sm:btn-sm md:btn-md  ">Next</button>
 
             <div class=" flex justify-around mt-4">
               <a href="#" class="underline">Terms and conditions</a>
@@ -361,7 +370,7 @@
 
 
   </main>
-  <footer class="footer p-10 bg-base-200 text-base-content">
+  <footer id="foter" class="footer p-10 bg-base-200 text-base-content">
     <aside>
       <img class="" src="./images/bus-logo.png" alt="">
       <h2 class="text-3xl font-bold mb-4"> <span class="text-lime-700">GO</span> Bus service</h2>
